@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./login.css" />
+  <link rel="stylesheet" href="./landng.css" />
+  <title>Attractive Login Page</title>
+</head>
+<body>
+    <header>
+        <div class="navbar-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./Assest/Pictures/logo.png" alt="ArealYou Logo" />
+        </div>
+        <div>
+          <ul class="navbar-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    <h1 class="heading"> Login Page</h1>
+    <div class="wrrp">
+    <div class="login-box hover-effect">
+        <input type="text" id="phoneInput" placeholder="Phone Number" oninput="validatePhoneNumber()">
+        <div class="otp-input" id="otpBox">
+          <input type="text" id="otpInput" placeholder="Enter OTP" oninput="validateOTP()">
+        </div>
+        <button class="submit-btn" id="submitBtn" onclick="submitForm()" disabled>Submit</button>
+      </div>
+    </div>
+  <script src="./login.js"></script>
+</body>
+</html>
