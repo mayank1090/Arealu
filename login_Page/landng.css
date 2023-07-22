@@ -116,14 +116,17 @@ footer {
 }
 
 .navbar {
-  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: #f4f4f4;
+}
+
+.sticky {
+  position: sticky;
   top: 0;
-  z-index: 1009;
+  z-index: 1090;
 }
 
 .navbar-toggle {
