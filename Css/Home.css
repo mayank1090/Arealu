@@ -1,0 +1,83 @@
+.parent{
+    background-color:#011E11;;
+}
+
+.p-color{
+    color: #12FF46;
+font-family: DM Sans;
+font-size: 3.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform:capitalize;
+}
+
+.tag{
+    color: #FFF;
+font-family: DM Sans;
+font-size: 3.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+}
+
+.smll{
+    color: #FFF;
+font-family: DM Sans;
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+}
+
+.timedis{
+    color: #D37556;
+font-family: Inter;
+font-size: 3.5rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: capitalize;
+}
+
+.scan-prnt{
+    border-radius: 3.75rem;
+    background: #12FF46;
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.strt{
+    color: #000;
+font-family: Neue Machina;
+font-size: 1.625rem;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+text-transform: capitalize;
+src: url("../Fonts/Neue\ Machina\ -\ Free\ for\ Personal\ Use/");
+}
+
+.width45{
+    width: 45%;
+}
+
+.dotes{
+    width: 100%;
+}
+
+.scanprnt {
+   
+}
+
+.scanner{
+    top: 35%;
+    position: absolute;
+    left: 37%;
+    width: 25%;
+}
+
+.otherone{
+    position: relative;
+}
