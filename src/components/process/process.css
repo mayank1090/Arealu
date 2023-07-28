@@ -1,0 +1,72 @@
+.process{
+    color: #000;
+font-family: DM Sans;
+font-size: 2rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+}
+
+.works{
+    color: #12FF46;
+font-family: DM Sans;
+font-size: 2.625rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+}
+
+img.arrowsecond {
+    width: 100%;
+    margin-top: 30%;
+}
+
+.blackarrow{
+    width: 100%;
+}
+
+.arrow {
+    width: 19%;
+}
+
+
+.green {
+    width: 8%;
+}
+
+.ornge{
+    color: #D37556;
+font-family: DM Sans;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+}
+
+.disc{
+    color: #000;
+text-align: center;
+font-family: DM Sans;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.disprnt,.orngeprnt{
+    text-align: center;
+}
+
+.text-prnt{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 20%;
+}
+
+.anyyt{
+    justify-content: space-between;
+}

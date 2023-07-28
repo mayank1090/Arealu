@@ -1,5 +1,17 @@
 .parent{
-    background-color:#011E11;;
+    background-color:#011E11;
+    padding-left: 4rem;
+    padding-right: 4rem
+}
+
+.small-head-prnt{
+    padding-top: 3rem ;
+        width: 33%;
+        padding-bottom: 3rem;
+}
+
+.timep{
+    padding-bottom: 3rem;
 }
 
 .p-color{
@@ -10,6 +22,11 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 text-transform:capitalize;
+}
+
+.headtext {
+    padding-top: 2rem;
+    width: 65%
 }
 
 .tag{
@@ -50,17 +67,15 @@ text-transform: capitalize;
 
 .strt{
     color: #000;
-font-family: Neue Machina;
 font-size: 1.625rem;
-font-style: normal;
+font-family:Neue Machina;;
 font-weight: 800;
 line-height: normal;
 text-transform: capitalize;
-src: url("../Fonts/Neue\ Machina\ -\ Free\ for\ Personal\ Use/");
 }
 
 .width45{
-    width: 45%;
+    width: 48%;
 }
 
 .dotes{
@@ -78,6 +93,20 @@ src: url("../Fonts/Neue\ Machina\ -\ Free\ for\ Personal\ Use/");
     width: 25%;
 }
 
-.otherone{
-    position: relative;
+.logo-parent{
+    padding-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 9.37725rem;
+    height: 3.45475rem;
+
 }
+
+.width55{
+    width: 55%;
+}
+
+.logo-parent > img {
+   width: 100%;
+}
+
