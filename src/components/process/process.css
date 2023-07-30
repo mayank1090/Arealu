@@ -1,21 +1,21 @@
-.process{
+.process {
     color: #000;
-font-family: DM Sans;
-font-size: 2rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: capitalize;
+    font-family: DM Sans;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
 }
 
-.works{
+.works {
     color: #12FF46;
-font-family: DM Sans;
-font-size: 2.625rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: capitalize;
+    font-family: DM Sans;
+    font-size: 2.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
 }
 
 img.arrowsecond {
@@ -23,7 +23,7 @@ img.arrowsecond {
     margin-top: 30%;
 }
 
-.blackarrow{
+.blackarrow {
     width: 100%;
 }
 
@@ -36,37 +36,116 @@ img.arrowsecond {
     width: 8%;
 }
 
-.ornge{
+.ornge {
     color: #D37556;
-font-family: DM Sans;
-font-size: 1.5rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: capitalize;
+    font-family: DM Sans;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
 }
 
-.disc{
+.disc {
     color: #000;
-text-align: center;
-font-family: DM Sans;
-font-size: 1.25rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: uppercase;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
 }
 
-.disprnt,.orngeprnt{
+.disprnt,
+.orngeprnt {
     text-align: center;
 }
 
-.text-prnt{
+.text-prnt {
     padding-top: 2rem;
     padding-bottom: 2rem;
     width: 20%;
 }
 
-.anyyt{
+.anyyt {
     justify-content: space-between;
+}
+
+.green svg {
+    width: 100%;
+}
+
+@media screen and (max-width:480px) {
+
+    .random,
+    .anyyt {
+        flex-direction: column;
+    }
+
+    .flexcontainerprnt {
+        display: flex;
+    }
+
+    .random {
+        width: 25%;
+        justify-content: start !important;
+    }
+
+    .anyyt {
+        width: 70%;
+    }
+
+    .green,
+    .arrow {
+        width: 100%;
+    }
+
+    .text-prnt {
+        width: 100%;
+    }
+
+
+
+    .arrow {
+        height: 17%;
+    }
+
+
+
+    .green {
+        height: 10%;
+    }
+
+    .blackarrow {
+        width: 7rem;
+        height: 1.06238rem;
+        transform: rotate(90deg);
+        flex-shrink: 0;
+
+    }
+
+    .ornge {
+        color: #D37556;
+        font-family: DM Sans;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+    .disc {
+        color: #000;
+        font-family: DM Sans;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+    .green svg{
+        height: 100%;
+    }
 }
