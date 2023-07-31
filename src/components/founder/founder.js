@@ -5,14 +5,16 @@ export default function Founder() {
   return (
     <>
       <div class="container ">
-       <div className="d-flex ">
+       <div className="d-flex pntt">
         <div className="ownerpnt">
-            <img className="owner" src="" alt="owner"></img>
+            <div className="ownerdiv">
+            <img className="owner" src="./Images/owner.png" alt="owner"></img>
+            </div>
         </div>
 
         <div className="ownerinfo">
             <div className="cloundprnt">
-                <img className="cloud" src="" alt="cloud"></img>
+                <img className="cloud" src="./Images/clouds.png" alt="cloud"></img>
             </div>
 
             <div className="ownertext">
@@ -23,7 +25,7 @@ and services that enhance and streamline various aspects of personal care. with 
 
             <div className="ownerintro d-flex">
                 <div className="greenprnt">
-                    <img src="" className="green" alt="greenone"></img>
+                    
                 </div>
 
                 <div className="introtext">

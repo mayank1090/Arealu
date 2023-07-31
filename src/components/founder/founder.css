@@ -1,0 +1,84 @@
+.cloundprnt {
+    text-align: end;
+}
+
+.orngetext {
+    color: #D37556;
+    font-family: DM Sans;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.whitetxt {
+    color: #000;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.ownername {
+    color: #D37556;
+    font-family: DM Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.designation {
+    color: #000;
+    font-family: DM Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.scanbtn {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 60px;
+    background: #12FF46;
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.btntxt {
+    color: #000;
+    font-family: Neue Machina;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.ownerpnt {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.ownerinfo {
+    width: 60%;
+}
+
+.pntt {
+    justify-content: space-between;
+
+}
+
+.owner {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
