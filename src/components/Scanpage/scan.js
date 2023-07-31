@@ -4,6 +4,7 @@ import "./scan.css";
 export default function Scan() {
   return (
     <>
+    <div className="blank">
       <div className="container wholeprnt ">
         <div className="text-center">
             <p className="uperhead">we made your skin & hair care</p>
@@ -65,6 +66,7 @@ hair like never before </p>
 
         </div>
 
+      </div>
       </div>
     </>
   );

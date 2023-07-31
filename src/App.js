@@ -8,9 +8,9 @@ import Scan from './components/Scanpage/scan';
 function App() {
   return (
     <div className="App">
-      {/* <Landing/> */}
-      {/* <Process/> */}
-      {/* <Scan/> */}
+      {/* <Landing/>
+      <Process/>
+      <Scan/> */}
       <Founder/>
     </div>
   );
