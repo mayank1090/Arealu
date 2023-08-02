@@ -91,7 +91,10 @@ text-transform: capitalize;
     width: 30%;
 }
 
-.rgtprnt{
+.rgtprnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 50%;
 }
 
