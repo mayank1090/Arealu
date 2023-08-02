@@ -80,6 +80,7 @@ line-height: normal;
 text-transform: capitalize;
 }
 
+
 .parent{
     padding: 0 !important;
     justify-content: space-between;
@@ -88,6 +89,15 @@ text-transform: capitalize;
 .lftprnt {
   
     width: 30%;
+}
+
+.rgtprnt{
+    width: 50%;
+}
+
+.gacsvg {
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 .ttyr {
