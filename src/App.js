@@ -1,5 +1,6 @@
 
 import './App.css';
+import About from './components/about/about';
 import Founder from './components/founder/founder';
 import Landing from './components/landingPage/landing';
 import Process from './components/process/process';
@@ -10,8 +11,9 @@ function App() {
     <div className="App">
       {/* <Landing/>
       <Process/>
-      <Scan/> */}
-      <Founder/>
+      <Scan/>
+      <Founder/> */}
+      <About/>
     </div>
   );
 }

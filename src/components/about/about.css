@@ -1,0 +1,95 @@
+.blank{
+    background-color: #011E11;;
+}
+
+.heading{
+    color: #12FF46;
+font-family: DM Sans;
+font-size: 2.625rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+}
+
+.imgprnt{
+    padding-left: 0;
+}
+
+.companyname{color: #D37556;
+    font-family: DM Sans;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;}
+
+.headquater-txt{
+    margin: 0;
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;}    
+
+.address-txt{color: #FFF;
+    font-family: DM Sans;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;}    
+
+.emaillike{color: #D37556;
+    font-family: DM Sans;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;}    
+
+.number{
+    color: #FFF;
+font-family: DM Sans;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+}    
+
+.margindis{
+    margin-bottom: 0;
+}
+
+.greenupdate{
+    border-radius: 1.5rem;
+background: #12FF46;
+text-align: center;
+}
+
+.updatetext{
+    color: #000;
+font-family: Neue Machina;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+}
+
+.parent{
+    padding: 0 !important;
+    justify-content: space-between;
+}
+
+.lftprnt {
+  
+    width: 30%;
+}
+
+.ttyr {
+    justify-content: space-between;
+}

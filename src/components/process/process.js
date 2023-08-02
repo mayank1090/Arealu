@@ -1,7 +1,32 @@
 import React from "react";
+import { useState,useEffect } from "react";
 import "./process.css";
 
 export default function Process() {
+
+  const [imageSource, setImageSource] = useState('./Images/Group 50.png');
+
+  useEffect(() => {
+    // Function to update the image source based on screen size
+    const handleImageSource = () => {
+      const mobileViewWidth = 480;
+      if (window.innerWidth <= mobileViewWidth) {
+        setImageSource('./Images/Group 51.png');
+      } else {
+        setImageSource('./Images/Group 50.png');
+      }
+    };
+
+    // Call the function on component mount and when the window is resized
+    handleImageSource();
+    window.addEventListener('resize', handleImageSource);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleImageSource);
+    };
+  }, []);
+
   return (
     <>
       <div class="container ">
@@ -15,97 +40,8 @@ export default function Process() {
     
        <div className="flexcontainerprnt">
         <div className="d-flex justify-content-center random">
-          <div className="green">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="110"
-              height="110"
-              viewBox="0 0 110 110"
-              fill="none"
-            >
-              <circle
-                cx="55"
-                cy="55"
-                r="55"
-                transform="rotate(-90 55 55)"
-                fill="#12FF46"
-              />
-            </svg>
-          </div>
-          <div className="arrow">
-            <img
-              className="blackarrow"
-              src="./Images/Group 31.png"
-              alt="arrow"
-            />
-          </div>
-
-          <div className="green">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="110"
-              height="110"
-              viewBox="0 0 110 110"
-              fill="none"
-            >
-              <circle
-                cx="55"
-                cy="55"
-                r="55"
-                transform="rotate(-90 55 55)"
-                fill="#12FF46"
-              />
-            </svg>
-          </div>
-          <div className="arrow">
-            <img
-              className="arrowsecond blackarrow"
-              src="./Images/Group 32.png"
-              alt="arrow"
-            />
-          </div>
-
-          <div className="green">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="110"
-              height="110"
-              viewBox="0 0 110 110"
-              fill="none"
-            >
-              <circle
-                cx="55"
-                cy="55"
-                r="55"
-                transform="rotate(-90 55 55)"
-                fill="#12FF46"
-              />
-            </svg>
-          </div>
-          <div className="arrow">
-            <img
-              className="blackarrow"
-              src="./Images/Group 33.png"
-              alt="arrow"
-            />
-          </div>
-
-          <div className="green">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="110"
-              height="110"
-              viewBox="0 0 110 110"
-              fill="none"
-            >
-              <circle
-                cx="55"
-                cy="55"
-                r="55"
-                transform="rotate(-90 55 55)"
-                fill="#12FF46"
-              />
-            </svg>
+          < div className="processimgparent">
+            <img className="processimg" src={imageSource} alt="process"></img>
           </div>
         </div>
 
