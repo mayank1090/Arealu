@@ -82,9 +82,6 @@ text-transform: capitalize;
     width: 100%;
 }
 
-.scanprnt {
-   
-}
 
 .scanner{
     top: 35%;
@@ -108,5 +105,62 @@ text-transform: capitalize;
 
 .logo-parent > img {
    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    
+    .parent {
+        background-color: #011E11;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .gap30 {
+        flex-direction: column;
+    }
+
+    .width55 {
+       width: 100%;
+       text-align: center;
+    }
+
+    .headtext{
+        width: 100%;
+    }
+
+    .small-head-prnt {
+        padding-top: 2rem;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    .tag{color: #FFF;
+        font-family: DM Sans;
+        font-size: 2.625rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;}
+
+        .p-color{
+            color: #12FF46;
+font-family: DM Sans;
+font-size: 2.625rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: capitalize;
+        }
+
+        .timedis{font-size: 2.65rem;}
+
+        .timep {
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+
+        .width45 {
+            width: 100%;
+        }
 }
 

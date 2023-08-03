@@ -11,7 +11,7 @@ export default function About() {
         <div className="imgprnt container">
                 <img src="./Images/logo.png" alt="logo"></img>
               </div>
-        <div className="container d-flex parent">
+        <div className="container d-flex parentnydiv">
           
           <div className="lftprnt">
             <div className="company">

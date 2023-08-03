@@ -92,3 +92,52 @@
     border-radius: 10%;
     margin-right: 1rem;
 }
+
+@media screen and (max-width:768px) {
+    
+    .d-flex.pntt {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .ownerdiv {
+        width: 55%;}
+
+        .ownerpnt,.ownerinfo {
+            width: 100%;}   
+            
+            .orngetext{
+                text-align: center;
+                font-size: 2rem;
+            }
+
+            .whitetxt{color: #000;
+                text-align: center;
+               
+                font-size: 1rem;
+                ;}
+
+                .ownertext {
+                    padding: 0 1rem;
+                }    
+
+                .ownername{
+                    font-size: 2rem;
+                }
+
+                .ownerintro {
+                    justify-content: center;
+                }
+
+                .designation{
+                    font-size: 1rem;
+                }
+
+                .scanbtn{
+                    width: 80%;
+                }
+
+                .cloundprnt {
+                    display: none;
+                }
+}

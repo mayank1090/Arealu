@@ -1,7 +1,21 @@
 import React from 'react'; 
 import "./landing.css"
+import { useState,useEffect } from 'react';
 
 export default function Landing (){
+
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 767);
+
+  useEffect(() => {
+    // Update the state when the window is resized
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 767);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
     return(
         <>
@@ -16,7 +30,11 @@ export default function Landing (){
             <p class="tag">
               AI powered<span class="p-color"> personalised skin & hair</span> care</p>
           </div>
-
+          {isMobileView && <div class="width45 otherone">
+              <div className='merge-parent'>
+                <img className='dotes' src='./Images/dortes.png'/>
+              </div>
+            </div>}
           <div class="small-head-prnt">
             <p class="smll">get free personalised report
                 in less than</p>
@@ -30,11 +48,11 @@ export default function Landing (){
             <p class="strt">Start Scaning</p>
           </div>
         </div>
-        <div class="width45 otherone">
+        {!isMobileView && <div class="width45 otherone">
             <div className='merge-parent'>
               <img className='dotes' src='./Images/dortes.png'/>
             </div>
-        </div>
+          </div>}
       </div>
     </div>
         </>

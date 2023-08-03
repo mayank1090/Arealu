@@ -81,7 +81,7 @@ text-transform: capitalize;
 }
 
 
-.parent{
+.parentnydiv{
     padding: 0 !important;
     justify-content: space-between;
 }
@@ -98,6 +98,14 @@ text-transform: capitalize;
     width: 50%;
 }
 
+.leftone {
+    width: 30%;
+}
+
+.head{
+    padding-top: 1rem;
+}
+
 .gacsvg {
     padding-right: 0.5rem;
     padding-top: 0.5rem;
@@ -105,4 +113,33 @@ text-transform: capitalize;
 
 .ttyr {
     justify-content: space-between;
+}
+
+@media screen and (max-width: 768px){
+  
+    .parentnydiv {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 1rem !important;
+    }
+
+    .lftprnt{
+        width: 100%;
+    }
+
+    .rgtprnt {
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .headquater {
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+.leftone {
+    width: 47%;
+}
 }

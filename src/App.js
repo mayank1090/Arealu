@@ -9,10 +9,10 @@ import Scan from './components/Scanpage/scan';
 function App() {
   return (
     <div className="App">
-      {/* <Landing/>
+       <Landing/>
       <Process/>
       <Scan/>
-      <Founder/> */}
+      <Founder/> 
       <About/>
     </div>
   );
