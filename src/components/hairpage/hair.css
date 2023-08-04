@@ -1,0 +1,199 @@
+.hairparent {
+    background-color: #011E11;
+}
+
+.leftetxthair {
+    width: 45%;
+    padding-top: 2rem
+}
+
+.rghttxthair {
+    width: 50%;
+}
+
+.hairprnt {
+    justify-content: space-between;
+}
+
+.dotesparent {
+    width: 100%;
+}
+
+.onlydotesparnt {
+    width: 100%;
+}
+
+.orheheading {
+    color: #12FF46;
+    font-family: DM Sans;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.organehairspan {
+    color: #D37556;
+    font-family: DM Sans;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.innerpara,.problemli {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.innerpara{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.problemul{
+    padding-left: 1.2rem;
+}
+
+.problemli{
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+
+
+.hairparent {
+    /* Add flexbox to center its children */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dotesparent {
+    /* Make it a flex container with stacked items */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* Center its children horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .greenparent {
+    /* Center its children horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hairlossprnt {
+    /* Center its children horizontally and vertically */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.greenparent {
+    border-radius: 50%;
+    width: 65%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+    background: #12FF46;
+}
+
+.hairlossprnt {
+    /* Center its children horizontally and vertically */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* You can set top, bottom, left, or right to position it relative to the .dotesparent */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    opacity: 1;
+    transition: opacity 1s ease-in-out; /* Add a transition for smooth fading */
+  }
+
+  img.hairloss {
+    width: 100%;
+}
+
+.hairloss {
+    width: 100%;
+    opacity: 1;
+    animation: fade 5s  infinite ease-in;
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    25%{
+        opacity: 0.75;
+    }
+    50%{
+        opacity: 0.5;
+    }
+
+    75%{
+        opacity: 0.35;
+    }
+    100% {
+      opacity: 0.05;
+    }
+  }
+  
+
+  @media screen and (max-width:1024px) {
+
+    .rghttxthair{
+        display: none;
+    }
+
+    .leftetxthair {width: 100%;}
+    
+    .aiheading {
+        text-align: center;
+    }
+
+    p.innerpara {
+        text-align: center;
+    }
+
+    ul.problemul {
+        list-style: none;
+        text-align: center;
+    }
+  }
+
+  @media screen and (max-width:480px){
+
+    .leftetxthair {
+        padding-top: 1rem;
+    }
+    span.organehairspan {
+        display: block;
+    }
+
+    .orheheading,.organehairspan{
+        font-size: 2.65rem;
+    }
+
+    .innerpara,.problemli{
+        font-size: 1rem;
+    }
+
+    
+  }

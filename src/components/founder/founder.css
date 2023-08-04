@@ -94,50 +94,59 @@
 }
 
 @media screen and (max-width:768px) {
-    
+
     .d-flex.pntt {
         flex-direction: column;
         gap: 3rem;
     }
 
     .ownerdiv {
-        width: 55%;}
+        width: 55%;
+    }
 
-        .ownerpnt,.ownerinfo {
-            width: 100%;}   
-            
-            .orngetext{
-                text-align: center;
-                font-size: 2rem;
-            }
+    .ownerpnt,
+    .ownerinfo {
+        width: 100%;
+    }
 
-            .whitetxt{color: #000;
-                text-align: center;
-               
-                font-size: 1rem;
-                ;}
+    .orngetext {
+        text-align: center;
+        font-size: 2rem;
+    }
 
-                .ownertext {
-                    padding: 0 1rem;
-                }    
+    .whitetxt {
+        color: #000;
+        text-align: center;
 
-                .ownername{
-                    font-size: 2rem;
-                }
+        font-size: 1rem;
+        ;
+    }
 
-                .ownerintro {
-                    justify-content: center;
-                }
+    .ownertext {
+        padding: 0 1rem;
+    }
 
-                .designation{
-                    font-size: 1rem;
-                }
+    .ownername {
+        font-size: 2rem;
+    }
 
-                .scanbtn{
-                    width: 80%;
-                }
+    .ownerintro {
+        justify-content: center;
+    }
 
-                .cloundprnt {
-                    display: none;
-                }
+    .designation {
+        font-size: 1rem;
+    }
+
+    .scanbtn {
+        width: 80%;
+    }
+
+    .cloundprnt {
+        display: none;
+    }
+
+    .ownerpnt {
+        padding-top: 2rem;
+    }
 }
