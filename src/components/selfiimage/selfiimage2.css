@@ -1,0 +1,217 @@
+.upper-sec {
+    justify-content: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.face {
+    height: 60vh;
+}
+
+.switchcameraprnt {
+    margin-left: -10%;
+}
+
+.width50 {
+    width: 50%;
+    padding-bottom: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../../../public/Images/selfiebackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 2rem;
+    border-radius: 1.5rem;
+}
+.progress-bar{
+    background-color: #9279FF;
+}
+.face {
+    width: 60%;
+    background-color: aquamarine;
+    height: 55vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 40%;
+    margin-top: 2rem;
+    border-radius: 50%;
+}
+
+.video-element {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .video-wrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    overflow: hidden;
+  }
+  .btnsprnt {
+    padding-top: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.slefietxt{color: #000;
+    margin-left: 10%;
+    font-family: DM Sans;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;}
+
+    .selfitext-rnt {
+        flex: 1; /* Takes up remaining space in between */
+        text-align: center;
+      }
+
+      .capturebtnprnt {
+        width: 90%;
+        text-align: center;
+    }
+
+    
+
+button.capture {
+    margin-left: 3%;
+    border: 0;
+    background: transparent;
+}
+
+button.swithcamera {
+    border: 0;
+    background: transparent
+}
+
+
+@media screen and (max-width:1024px) and (min-width:768px) {
+    
+    .face{
+        width: 60%;
+    }
+    .progress {
+        position: relative;
+        width: 50% !important;}
+}
+
+@media screen and (max-width:768px) and (min-width:480px) {
+
+    .progress {
+        position: relative;
+        width: 80% !important;}
+    .slefietxt{
+        margin-left: 34%;
+    }
+
+    .selfitext-rnt{
+        text-align: center;
+    }
+
+    .upper-sec{
+        width: 80%;
+    }
+    
+   
+
+    .width50{
+        width: 80%;
+        padding-bottom: 1.25rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .progress {
+        position: relative;
+        width: 90% !important;}
+    
+    .face{
+        width: 80%;
+        border-radius: 50%;
+    }
+
+    .width50{
+        width: 90%;
+        padding-bottom: 1.25rem;
+        border-radius: 1.5rem;
+    }
+
+    .slefietxt {
+        color: #000;
+        margin-left: 20%;
+        font-family: DM Sans;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+    img.logoaselfi {
+        height: 2rem;
+    }
+
+    .upper-sec {
+        justify-content: center;
+        width: 90%;}
+
+        .rightarrow {
+            height: 2rem;
+
+        }
+
+        .face {
+            width: 70%;
+            background-color: aquamarine;
+            height: 55vh;}
+
+            button.capture {
+                margin-left: 15%;
+                border: 0;
+                background: transparent;
+            }
+
+            img.capturebtn {
+                height: 3.25rem;
+            }
+
+
+}
+
+p.current-percentage {
+    position: absolute;
+    left: 50%;
+    margin-bottom: 0;
+    color: #FFF;
+font-family: DM Sans;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+}
+
+.slefietxt {
+    margin-left: 0 !important;
+}
+
+.progress {
+    position: relative;
+    width: 30%;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: #000;
+    margin-bottom: 1rem;
+    height: 1.9375rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+  .progress-bar {
+    border-radius: 10px;
+  }
+     
