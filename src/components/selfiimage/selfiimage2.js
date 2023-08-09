@@ -1,5 +1,5 @@
 import "./selfiimage2.css";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect,useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { captureImage } from "../../actions/selfiimageaction";
 
@@ -9,18 +9,30 @@ function Selfie2() {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
 
-  const startCamera = async () => {
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-      videoRef.current.srcObject = stream;
-    } catch (error) {
-      console.error("Error accessing camera:", error);
-    }
+  const [facingMode, setFacingMode] = useState("user");
+
+  const switchCamera = () => {
+    console.log(facingMode)
+    const newFacingMode = facingMode === "user" ? "environment" : "user";
+    setFacingMode(newFacingMode);
+    startCamera(newFacingMode);
   };
 
+  const startCamera = async (facingMode) => {
+    try {
+        const stream = await navigator.mediaDevices.getUserMedia({
+          video: { facingMode: facingMode },
+        });
+        videoRef.current.srcObject = stream;
+      } catch (error) {
+        console.error("Error accessing camera:", error);
+      }
+  };
+
+
   useEffect(() => {
-    startCamera();
-  }, []);
+    startCamera(facingMode);
+  }, [facingMode]);
 
   const capturePhoto = (imageData) => {
     const video = videoRef.current;
@@ -101,7 +113,7 @@ function Selfie2() {
               </div>
 
               <div className="switchcameraprnt">
-                <button className="swithcamera">
+                <button className="swithcamera"  onClick={switchCamera}>
                 <svg
   xmlns="http://www.w3.org/2000/svg"
   width="46"

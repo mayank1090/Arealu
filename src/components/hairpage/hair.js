@@ -39,7 +39,7 @@ export default function Hair() {
        <div className="d-flex hairprnt">
         <div className="leftetxthair">
             <div className="aiheading">
-                <p className="orheheading">AI <span className="organehairspan">For Your Hair</span></p>
+                <p className="orheheading">AI <span className="organehairspan splexailhairtag">For Your Hair</span></p>
             </div>
             {isMobileView &&  <div className="dotesparent">
                 <img src="./Images/onlydotes.png" alt="onlydotes"className="onlydotesparnt"></img>
@@ -57,7 +57,7 @@ export default function Hair() {
             </div>
 
             <div className="hairproblemui">
-                <ul className="problemul">
+                <ul className="problemul hairulspcl">
                     <li className="problemli">Hair Color</li>
                     <li className="problemli">hair type</li>
                     <li className="problemli">hair category</li>

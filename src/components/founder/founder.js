@@ -13,9 +13,9 @@ export default function Founder() {
         </div>
 
         <div className="ownerinfo">
-            <div className="cloundprnt">
+            {/* <div className="cloundprnt">
                 <img className="cloud" src="./Images/clouds.png" alt="cloud"></img>
-            </div>
+            </div> */}
 
             <div className="ownertext">
                 <p className="orngetext">from the founder</p>

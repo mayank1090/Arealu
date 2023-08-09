@@ -1,4 +1,4 @@
-.uperhead{
+.uperhead {
     padding-top: 1.69rem;
     color: #FFF;
     font-family: DM Sans;
@@ -6,100 +6,138 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    text-transform: capitalize;}
+    text-transform: capitalize;
+}
 
-   .lowerhead{color: #12FF46;
+.lowerhead {
+    color: #9279FF;
     font-family: DM Sans;
     font-size: 3.625rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-transform: capitalize;} 
+    text-transform: capitalize;
+}
 
-    .subdiv{
-     width: 26%;
-        background-color: #2D4048;
-        padding: 2rem 2rem 5rem 3rem;
-        border-radius: 7%;
+.subdiv {
+    opacity: 0;
+    width: 26%;
+    background-color: #2D4048;
+    padding: 2rem 2rem 5rem 3rem;
+    border-radius: 7%;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.subdiv:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.subdiv:nth-child(2) {
+    animation-delay: 2s; /* 2 seconds delay */
+}
+
+.subdiv:nth-child(3) {
+    animation-delay: 4s; /* 4 seconds delay */
+}
+
+
+.ongrr {
+    color: #D37556;
+    font-family: DM Sans;
+    font-size: 2.625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.black {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.blank {
+    background-color: #011E11;
+    ;
+}
+
+.scrollprnt {
+    justify-content: space-evenly;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.orngehead {
+    text-align: center;
+}
+
+.blackext {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .scrollprnt {
+        justify-content: flex-start;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
-    .ongrr{color: #D37556;
+    .black {
+        color: #FFF;
         font-family: DM Sans;
-        font-size: 2.625rem;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+    .lowerhead {
+        color: #9279FF;
+        font-family: DM Sans;
+        font-size: 1.875rem;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        text-transform: capitalize;}
+        text-transform: capitalize;
+    }
 
-        .black{
-            color: #FFF;
-font-family: DM Sans;
-font-size: 1rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: uppercase;
-        }
+    .scrollprnt {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 
-        .blank{
-            background-color: #011E11;;
-        }
+    .uperhead {
+        color: #FFF;
+        font-family: DM Sans;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+    }
 
-        .scrollprnt{
-            justify-content: space-evenly;
-            padding-top: 5rem;
-            padding-bottom: 5rem;
-        }
 
-        .orngehead{
-            text-align: center;
-        }
-
-        .blackext{
-            text-align: center;
-        }
-
-        @media only screen and (max-width: 768px) {
-            .scrollprnt {
-                justify-content: flex-start;
-              display: flex;
-              flex-wrap: nowrap;
-              overflow-x: auto;
-              -webkit-overflow-scrolling: touch;
-            }
-
-            .black{color: #FFF;
-                font-family: DM Sans;
-                font-size: 1rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                text-transform: capitalize;}
-            
-        .lowerhead{color: #12FF46;
-            font-family: DM Sans;
-            font-size: 1.875rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            text-transform: capitalize;}
-
-            .scrollprnt {
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-            }
-
-            .uperhead{color: #FFF;
-                font-family: DM Sans;
-                font-size: 1.25rem;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                text-transform: capitalize;}
-
-          
-            .subdiv {
-                flex: 0 0 90%;
-              margin-right: 1rem; 
-            }
-        }
+    .subdiv {
+        flex: 0 0 90%;
+        margin-right: 1rem;
+    }
+}

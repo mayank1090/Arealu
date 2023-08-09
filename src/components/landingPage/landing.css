@@ -1,27 +1,27 @@
-.parent{
-    background-color:#011E11;
+.parent {
+    background-color: #000;
     padding-left: 4rem;
     padding-right: 4rem
 }
 
-.small-head-prnt{
-    padding-top: 3rem ;
-        width: 33%;
-        padding-bottom: 3rem;
-}
-
-.timep{
+.small-head-prnt {
+    padding-top: 3rem;
+    width: 33%;
     padding-bottom: 3rem;
 }
 
-.p-color{
-    color: #12FF46;
-font-family: DM Sans;
-font-size: 3.5rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform:capitalize;
+.timep {
+    padding-bottom: 3rem;
+}
+
+.p-color {
+    color: #9279FF;
+    font-family: DM Sans;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
 }
 
 .headtext {
@@ -29,68 +29,74 @@ text-transform:capitalize;
     width: 65%
 }
 
-.tag{
+.tag {
     color: #FFF;
-font-family: DM Sans;
-font-size: 3.5rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: capitalize;
+    font-family: DM Sans;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
 }
 
-.smll{
+.smll {
     color: #FFF;
-font-family: DM Sans;
-font-size: 1rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: capitalize;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
 }
 
-.timedis{
+.timedis {
     color: #D37556;
-font-family: Inter;
-font-size: 3.5rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-text-transform: capitalize;
+    font-family: Inter;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
 }
 
-.scan-prnt{
+.scan-prnt {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 3.25rem;
     border-radius: 3.75rem;
-    background: #12FF46;
+    background: #9279FF;
     box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.strt{
-    color: #000;
-font-size: 1.625rem;
-font-family:Neue Machina;;
-font-weight: 800;
+.strt {
+    color: #FFF;
+font-family: Nunito;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 700;
 line-height: normal;
 text-transform: capitalize;
+margin-bottom: 0;
 }
 
-.width45{
+.width45 {
     width: 48%;
 }
 
-.dotes{
+.dotes {
     width: 100%;
 }
 
 
-.scanner{
+.scanner {
     top: 35%;
     position: absolute;
     left: 37%;
     width: 25%;
 }
 
-.logo-parent{
+.logo-parent {
     padding-top: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -99,18 +105,19 @@ text-transform: capitalize;
 
 }
 
-.width55{
+.width55 {
     width: 55%;
+    padding-bottom: 1rem;
 }
 
-.logo-parent > img {
-   width: 100%;
+.logo-parent>img {
+    width: 100%;
 }
 
 @media screen and (max-width:768px) {
-    
+
     .parent {
-        background-color: #011E11;
+        background-color: #000;
         padding-left: 1rem;
         padding-right: 1rem;
     }
@@ -120,47 +127,102 @@ text-transform: capitalize;
     }
 
     .width55 {
-       width: 100%;
-       text-align: center;
+        width: 100%;
+        text-align: center;
     }
 
-    .headtext{
+    .headtext {
         width: 100%;
     }
 
     .small-head-prnt {
-        padding-top: 2rem;
+        padding-top: 1rem;
         width: 100%;
-        padding-bottom: 2rem;
+        padding-bottom: 0rem;
     }
 
-    .tag{color: #FFF;
+    .headtext {
+        padding-top: 0.5rem;
+    }
+
+    .tag {
+        color: #FFF;
         font-family: DM Sans;
         font-size: 2.625rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        text-transform: capitalize;}
+        text-transform: capitalize;
+    }
 
-        .p-color{
-            color: #12FF46;
-font-family: DM Sans;
-font-size: 2.625rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: capitalize;
-        }
+    .p-color {
+        color: #9279FF;
+        font-family: DM Sans;
+        font-size: 2.625rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+    }
 
-        .timedis{font-size: 2.65rem;}
+    .timedis {
+        font-size: 2.65rem;
+    }
 
-        .timep {
-            text-align: center;
-            padding-bottom: 2rem;
-        }
+    .timep {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
 
-        .width45 {
-            width: 100%;
-        }
+    .width45 {
+        width: 100%;
+    }
 }
 
+.scannerone {
+    width: 30%;
+    position: absolute;
+    top: 38%;
+    left: 35%;
+}
+
+.merge-parent {
+    position: relative;
+}
+
+.lineprnt {
+    top: 0;
+    position: absolute;
+    left: 6%;
+    width: 80%;
+    /* width: 100%; */
+    animation: InUp 4s ease-in-out infinite;
+}
+
+img.lineclass {
+    width: 100%;
+}
+
+@keyframes InUp {
+    0% {
+        top: 0;
+    }
+    25%{
+        top:40%
+    }
+
+    50%{  
+          top:80%;
+    }
+
+    75%{
+        top: 40%;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+img.landingscaner {
+    position: relative;
+}

@@ -32,7 +32,10 @@ export default function Landing (){
           </div>
           {isMobileView && <div class="width45 otherone">
               <div className='merge-parent'>
-                <img className='dotes' src='./Images/dortes.png'/>
+                <img className='dotes' src='./Images/onlydotes.png'/>
+                <div className='scannerone'>
+                  <img className='landingscaner' src='./Images/landingscanner.png'/>
+                </div>
               </div>
             </div>}
           <div class="small-head-prnt">
@@ -50,7 +53,13 @@ export default function Landing (){
         </div>
         {!isMobileView && <div class="width45 otherone">
             <div className='merge-parent'>
-              <img className='dotes' src='./Images/dortes.png'/>
+              <img className='dotes' src='./Images/onlydotes.png'/>
+              <div className='scannerone'>
+                  <img className='landingscaner' src='./Images/landingscanner.png'/>
+                  {/* <div className='lineprnt'>
+                    <img src='./Images/line.png' alt='line' className='lineclass'/>
+                  </div> */}
+                </div>
             </div>
           </div>}
       </div>

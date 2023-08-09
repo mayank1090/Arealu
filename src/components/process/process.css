@@ -12,12 +12,13 @@
     text-align: center;
     width: 100%;
 }
-.processimg{
+
+.processimg {
     width: 90%;
 }
 
 .works {
-    color: #12FF46;
+    color: #9279FF;
     font-family: DM Sans;
     font-size: 2.625rem;
     font-style: normal;
@@ -168,7 +169,95 @@ img.arrowsecond {
         text-transform: capitalize;
     }
 
-    .green svg{
+    .green svg {
         height: 100%;
     }
 }
+
+.main-process-prnt{
+    align-items: center;
+    width: 90%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+}
+
+.purplecircle {
+    width: 9%;
+    padding: 2vh 4vw;
+    background-color: #9279FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:  1s ease;
+}
+
+.purplecircle .number{
+    color: #000;
+    margin-bottom: 0;
+    color: #000;
+font-family: Nunito;
+font-size: 4rem;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+
+.arrowprntprocess {
+    width: 20%;
+}
+
+.fristarrow{
+    width: 100%;
+}
+
+.purplecircle:hover{
+ background-color: #D37556;
+}
+
+.purplecircle:hover .number{
+       color: #fff;
+   }
+
+   @media screen and (max-width:480px) {
+
+    .main-process-prnt{
+        flex-direction: column;
+        height: 90%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .proc {
+        width: 25%;
+    }
+
+    .purplecircle {
+        height: 9%;
+         width: 100%;}
+
+         .arrowprntprocess {
+            display: flex;
+            height: 20%;
+            width: auto;
+            justify-content: center;
+        }
+
+        .text-prnt {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .purplecircle .number{
+            font-size: 2rem;
+        }
+
+        
+    
+    
+   }
+
+
+

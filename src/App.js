@@ -5,7 +5,7 @@ import Founder from './components/founder/founder';
 import Hair from './components/hairpage/hair';
 import Landing from './components/landingPage/landing';
 import Process from './components/process/process';
-import CameraComponent from './components/Sample/sample';
+// import CameraComponent from './components/Sample/sample';
 import Scan from './components/Scanpage/scan';
 import Skin from './components/skinpage/skin';
 
@@ -23,16 +23,16 @@ function App() {
   return (
     <Provider store={store}>
     <div className="App">
-       {/* <Landing/>
-      <Process/> */}
-      {/* <Hair/> */}
-      {/* <Skin/> */}
+       <Landing/>
+      {/* <Process/> */}
+      {/* <Hair/>
+      <Skin/> */}
       {/* <CameraComponent/> */}
-      <Selfie1/>
+      {/* <Selfie1/>
       <Selfie2/>
-      <Selfie3/>
-      {/* <Scan/>
-      <Founder/> 
+      <Selfie3/> */}
+      {/* <Scan/> */}
+      {/* <Founder/> 
       <About/> */}
     </div>
     </Provider>

@@ -1,30 +1,33 @@
-.blank{
-    background-color: #011E11;;
+.blank {
+    background-color: #011E11;
+    ;
 }
 
-.heading{
-    color: #12FF46;
-font-family: DM Sans;
-font-size: 2.625rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: capitalize;
+.heading {
+    color: #9279FF;
+    font-family: DM Sans;
+    font-size: 2.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
 }
 
-.imgprnt{
+.imgprnt {
     padding-left: 0;
 }
 
-.companyname{color: #D37556;
+.companyname {
+    color: #D37556;
     font-family: DM Sans;
     font-size: 1.75rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-transform: capitalize;}
+    text-transform: capitalize;
+}
 
-.headquater-txt{
+.headquater-txt {
     margin: 0;
     color: #FFF;
     font-family: DM Sans;
@@ -32,62 +35,67 @@ text-transform: capitalize;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-transform: uppercase;}    
+    text-transform: uppercase;
+}
 
-.address-txt{color: #FFF;
+.address-txt {
+    color: #FFF;
     font-family: DM Sans;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-transform: capitalize;}    
+    text-transform: capitalize;
+}
 
-.emaillike{color: #D37556;
+.emaillike {
+    color: #D37556;
     font-family: DM Sans;
     font-size: 1.75rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-transform: capitalize;}    
+    text-transform: capitalize;
+}
 
-.number{
+.number {
     color: #FFF;
-font-family: DM Sans;
-font-size: 1.5rem;
+    font-family: DM Sans;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.margindis {
+    margin-bottom: 0;
+}
+
+.greenupdate {
+    border-radius: 1.5rem;
+    background: #9279FF;
+    text-align: center;
+}
+
+.updatetext {
+    color: #FFF;
+font-family: Nunito;
+font-size: 1.25rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
 text-transform: capitalize;
-}    
-
-.margindis{
-    margin-bottom: 0;
-}
-
-.greenupdate{
-    border-radius: 1.5rem;
-background: #12FF46;
-text-align: center;
-}
-
-.updatetext{
-    color: #000;
-font-family: Neue Machina;
-font-size: 1.25rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: capitalize;
 }
 
 
-.parentnydiv{
+.parentnydiv {
     padding: 0 !important;
     justify-content: space-between;
 }
 
 .lftprnt {
-  
+
     width: 30%;
 }
 
@@ -102,7 +110,7 @@ text-transform: capitalize;
     width: 30%;
 }
 
-.head{
+.head {
     padding-top: 1rem;
 }
 
@@ -115,15 +123,18 @@ text-transform: capitalize;
     justify-content: space-between;
 }
 
-@media screen and (max-width: 768px){
-  
+@media screen and (max-width: 768px) {
+    .imgprnt {
+        padding-left: 1rem;
+    }
+
     .parentnydiv {
         flex-direction: column;
         gap: 2rem;
         padding: 0 1rem !important;
     }
 
-    .lftprnt{
+    .lftprnt {
         width: 100%;
     }
 
@@ -137,9 +148,9 @@ text-transform: capitalize;
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
 
-.leftone {
-    width: 47%;
-}
+    .leftone {
+        width: 47%;
+    }
 }
