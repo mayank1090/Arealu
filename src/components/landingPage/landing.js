@@ -1,8 +1,10 @@
 import React from 'react'; 
 import "./landing.css"
-import { useState,useEffect } from 'react';
+import { useState,useEffect, } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Landing (){
+  const navigate = useNavigate();
 
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 767);
 
@@ -35,6 +37,9 @@ export default function Landing (){
                 <img className='dotes' src='./Images/onlydotes.png'/>
                 <div className='scannerone'>
                   <img className='landingscaner' src='./Images/landingscanner.png'/>
+        
+                    <img src='./Images/line.png' alt='line' className='lineclass lineprnt'/>
+                  
                 </div>
               </div>
             </div>}
@@ -47,7 +52,7 @@ export default function Landing (){
             <p class="timedis">30 sec....</p>
           </div>
 
-          <div class="scan-prnt text-center">
+          <div class="scan-prnt text-center " onClick={()=>{navigate("/selfie1")}}>
             <p class="strt">Start Scaning</p>
           </div>
         </div>
@@ -56,9 +61,7 @@ export default function Landing (){
               <img className='dotes' src='./Images/onlydotes.png'/>
               <div className='scannerone'>
                   <img className='landingscaner' src='./Images/landingscanner.png'/>
-                  {/* <div className='lineprnt'>
-                    <img src='./Images/line.png' alt='line' className='lineclass'/>
-                  </div> */}
+                    <img src='./Images/line.png' alt='line' className='lineclass lineprnt'/>
                 </div>
             </div>
           </div>}

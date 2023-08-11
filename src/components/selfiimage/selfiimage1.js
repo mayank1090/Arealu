@@ -2,8 +2,11 @@ import "./selfiimage.css";
 import React, { useRef, useEffect,useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { captureImage } from "../../actions/selfiimageaction";
+import { useNavigate } from "react-router-dom";
 
 function Selfie1() {
+
+  const navigate =useNavigate()
   const dispatch = useDispatch();
   const selfieImages = useSelector((state) => state.selfieImages);
   const videoRef = useRef(null);
@@ -77,7 +80,7 @@ function Selfie1() {
             <div className="selfitext-rnt">
               <p className="slefietxt">Front Selfie</p>
             </div>
-            <div className="rightarrowprnt">
+            <div className="rightarrowprnt " onClick={()=>{navigate("/selfie2")}}>
               <svg className="rightarrow"
                 xmlns="http://www.w3.org/2000/svg"
                 width="45"

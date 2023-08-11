@@ -1,0 +1,117 @@
+.questionnaire-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .center-heading {
+    text-align: center;
+    color: #000;
+font-family: DM Sans;
+font-size: 2rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+  }
+  
+  .center-subheading {
+    width: 35vw;
+    text-align: center;
+    margin-top: 1rem;
+    color: #000;
+font-family: DM Sans;
+font-size: 2rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+  }
+  
+  .options-container {
+    width: 25vw;
+    display: block;
+    margin-top: 1rem;
+}
+  
+  .option {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    border-radius: 2.5rem;
+    border: 1px solid #D37556;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .selected{
+    background-color:#D37556 ;
+  }
+
+  .option.selected .optionname {
+    color: #fff;
+  }
+  
+  /* .option:hover {
+    background-color: #ddd;
+  } */
+
+  h1.center-heading {
+    margin-top: 2rem;
+    width: 25%;
+}
+.optionname{
+    margin-bottom: 0;
+    color: #000;
+font-family: DM Sans;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+}
+
+.questiontxtdesign{
+    margin-bottom: 0;
+    color: #9279FF;
+font-family: DM Sans;
+font-size: 2rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+}
+
+.navigator-bar.d-flex {
+    margin-top: 2.75rem;
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:768px) {
+
+    .center-subheading,h1.center-heading {width: 100%;}
+
+    .options-container {
+        width: 80%;
+        /* width: 25vw; */
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .lftarro,.rgtarro{
+        width: 2rem;
+    }
+
+    .leftarrowoneicon{
+        width: 100%;
+    }
+
+    .uppermarginprocess{
+        margin-top: 5rem;
+    }
+    
+}

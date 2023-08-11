@@ -59,7 +59,10 @@
     text-transform: capitalize;
 }
 
-.scan-prnt {
+.scan-prnter {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -67,6 +70,14 @@
     border-radius: 3.75rem;
     background: #9279FF;
     box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.topauthprnt {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .strt {
@@ -195,18 +206,14 @@
 .lineprnt {
     top: 0;
     position: absolute;
-    left: 5% !important;
-    width: 90% !important;
+    left: 6%;
+    width: 80%;
     /* width: 100%; */
     animation: InUp 4s ease-in-out infinite;
 }
 
 img.lineclass {
     width: 100%;
-}
-
-.scan-prnt {
-    cursor: pointer;
 }
 
 @keyframes InUp {
@@ -220,7 +227,6 @@ img.lineclass {
         top: 90%;
     }
 
-    
 
     100% {
         top: 5%;
@@ -230,4 +236,114 @@ img.lineclass {
 img.landingscaner {
     width: 100%;
     position: relative;
+}
+
+
+
+
+.OTP {
+    color: #000;
+    font-family: DM Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.otpbutnprnt {
+    
+}
+
+.mobileinputprnt.d-flex {
+    border-radius: 2.5rem;
+    border: 1px solid #D37556;
+    background: #FFF;
+    width: 21.875rem;
+    justify-content: space-around;
+    height: 2.875rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leftotpprnt {
+    display: flex;
+    gap: 32%;
+}
+
+.canwejust{
+    justify-content: space-between;
+}
+
+.mobilenumberprnt {
+    gap: 5%;
+    width: 21.875rem;
+    height: 2.875rem;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.mobilenumbertextchild {
+    margin-bottom: 0;
+    color: #FFF;
+font-family: DM Sans;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+}
+
+.otpbutnprnt {
+    display: flex;
+    align-items: center;
+}
+
+.numbermobile {
+    border: 0;
+    border-radius: 2.5rem;
+}
+
+
+@media screen and (max-width:480px) {
+
+    .width55.canweotherone {
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+
+    .absolprnt{
+        margin-top: 3.5rem;
+    }
+
+    .mobileinputprnt.d-flex,.mobilenumberprnt{
+        width: 100% ;
+    }
+    
+}
+.mobileinputprnt.d-flex.letsgetthis {
+    justify-content: initial;
+}
+
+.leestfinal{margin-left: 10%;}
+
+@media screen and (min-width:480px) and (max-width:768px){
+    .width55.canweotherone {
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+    .absolprnt{
+        margin-top: 3.5rem;
+        width:21.875rem;
+    }
+    
+}
+
+
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

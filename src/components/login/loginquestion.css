@@ -1,0 +1,153 @@
+.navigator-bar.d-flex {
+    margin-top: 2.75rem;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.newlogincontainer {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nameinput {
+    width: 80%;
+    text-align: center;
+}
+
+.loginfullname,.agehead{color: #000;
+    font-family: DM Sans;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;}
+
+    input.fullnameinput {
+        width: 100%;
+        border: 1px solid #D37556;
+        border-radius: 2.5rem;
+        height: 2.3rem;
+        text-align: center;
+    }
+
+    .ageoptionrow.d-flex {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .ageoptions {
+        width: 90%;
+    }
+
+    .earlyagerow p{
+        margin-bottom: 0;
+        color: #000;
+font-family: DM Sans;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+    }
+
+    .othercanbethe{
+        margin-top: 5rem;
+    }
+
+    .earlyagerow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        height: 2.25rem;
+        text-align: center;
+        border: 1px solid #D37556;
+        border-radius: 2.5rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+
+    .agehead{
+        margin-top: 1.1rem;
+    }
+
+    .genderoptions.d-flex {
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    .malegender,.femalegender{
+        margin-bottom: 0;
+        color: #000;
+font-family: DM Sans;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+    }
+
+    .malegenderoption,.femalegenderoption {
+        border: 1px solid #D37556;
+        border-radius: 2.5rem;
+        width: 40%;
+        text-align: center;
+        height: 2.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .maleandfemale{
+        margin-top: 1.1rem;
+        color: #000;
+font-family: DM Sans;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+    }
+
+@media screen and (max-width:768px) {
+
+    .lftarro,.rgtarro{
+        width: 2rem;
+    }
+
+    .leftarrowoneicon{
+        width: 100%;
+    }
+
+    
+
+    .newlogincontainer {width: 80%;}
+    
+}
+
+@media screen and (max-width:1024px) and (min-width:768px) {
+    .newlogincontainer {width: 50%;}
+    
+}
+
+@media screen and (max-width:480px) {
+    .newlogincontainer {width: 90%;
+        margin-top: 3rem;
+    }
+}
+
+.selected{
+    background-color:#D37556 ;
+  }
+
+  .earlyagerow.selected p,.malegenderoption.selected p,.femalegenderoption.selected p {
+    color: #fff;
+  }
+
+  textarea:focus, input:focus{
+    outline: none;
+}
