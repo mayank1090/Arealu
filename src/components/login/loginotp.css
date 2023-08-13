@@ -252,10 +252,6 @@ img.landingscaner {
     margin-bottom: 0;
 }
 
-.otpbutnprnt {
-    
-}
-
 .mobileinputprnt.d-flex {
     border-radius: 2.5rem;
     border: 1px solid #D37556;
@@ -296,7 +292,14 @@ line-height: normal;
 text-transform: capitalize;
 }
 
+.showpassword,.absolprnt  {
+    cursor: pointer;
+}
+
+
+
 .otpbutnprnt {
+    cursor: pointer;
     display: flex;
     align-items: center;
 }
