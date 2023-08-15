@@ -231,3 +231,48 @@ img.landingscaner {
     width: 100%;
     position: relative;
 }
+
+@media screen and (max-width:1200px) and (min-width:768px) {
+    .headtext{
+        width: 95% !important;
+    }
+
+    .small-head-prnt {
+        padding-top: 0.5rem !important;
+        width: 95% !important;
+        padding-bottom: 0.5rem !important;
+    }
+
+    .width45.otherone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .timep {
+        padding-bottom: 0.5rem !important;
+    }
+
+    .subdiv {
+        opacity: 0;
+        width: 31% !important;}
+}
+
+img.dotessse{
+    animation: way 5s infinite ease-in-out;
+}
+
+@keyframes way {
+    
+    0% {
+        opacity: 1 ;
+    }
+
+    50% {
+        opacity: 0.5 ;
+    }
+
+    100% {
+        opacity: 0.25;
+    }
+}

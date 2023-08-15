@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import "./skin.css";
 
 export default function Skin() {
-  const [activeimage, setactiveimage] = useState(0);
 
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 767);
 
@@ -17,19 +16,6 @@ export default function Skin() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
-  useEffect(() => {
-    // List of image sources for hairloss
-
-    const interval = setInterval(() => {
-      // Increment activeimage index and loop back to 0 when reaching the end
-      setactiveimage((prevImage) => (prevImage + 1) % 2);
-    }, 5000); // Change image every 2 seconds (2000 milliseconds)
-
-    // Clean up the interval when the component is unmounted
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <>
       <div className="skinparent">
@@ -46,13 +32,15 @@ export default function Skin() {
 
                   <div className="greenparent">
                     <div className="hairlossprnt">
-                      <img
+                    <img
                         className="hairloss"
                         alt="hairloss"
-                        src={
-                          activeimage === 0
-                            ? "./Images/damageskin.png":"./Images/anotherskin.png"
-                        }
+                        src="./Images/damageskin.png"
+                      />
+                      <img
+                        className="hairgain"
+                        alt="hairloss"
+                        src="./Images/anotherskin.png"
                       />
                     </div>
                   </div>
@@ -75,11 +63,15 @@ export default function Skin() {
 
                   <div className="greenparent">
                     <div className="hairlossprnt">
-                      <img
+                    <img
                         className="hairloss"
                         alt="hairloss"
-                        src={activeimage === 0? "./Images/damageskin.png":"./Images/anotherskin.png"
-                        }
+                        src="./Images/damageskin.png"
+                      />
+                      <img
+                        className="hairgain"
+                        alt="hairloss"
+                        src="./Images/anotherskin.png"
                       />
                     </div>
                   </div>

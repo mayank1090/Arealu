@@ -1,5 +1,5 @@
 .hairparent {
-    background-color: #011E11;
+    background-color: #000;
 }
 
 .leftetxthair {
@@ -136,29 +136,7 @@ img.hairloss {
 .hairloss {
     width: 100%;
     opacity: 1;
-    animation: fade 4.3s infinite ease-in;
-}
-
-@keyframes fade {
-    0% {
-        opacity: 1;
-    }
-
-    25% {
-        opacity: 0.75;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-
-    75% {
-        opacity: 0.25;
-    }
-
-    100% {
-        opacity: 0;
-    }
+    animation: fade 5s infinite ease-in;
 }
 
 

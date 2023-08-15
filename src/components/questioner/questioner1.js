@@ -5,6 +5,7 @@ import {
   updateQuestion1Option,
 } from "../../actions/questionnaireActions";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Questionnaire1 = () => {
 
@@ -17,10 +18,22 @@ const Questionnaire1 = () => {
     dispatch(updateQuestion1Option(option));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     // Do something with the selected option, like submitting it to a backend or processing it
     console.log("Selected option:", selectedOption);
+
+    const dataToSend = {
+      question: "Your major skin issues ?", // Change this as needed
+      selectedOption: selectedOption,
+    };
+
+    try {
+      const response = await axios.post("your-api-endpoint", dataToSend);
+      console.log("API Response:", response.data); // Handle the response if needed
+    } catch (error) {
+      console.error("Error sending data:", error);
+    }
   };
 
   return (

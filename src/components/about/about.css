@@ -1,5 +1,5 @@
 .blank {
-    background-color: #011E11;
+    background-color: #000;
     ;
 }
 
@@ -80,12 +80,12 @@
 
 .updatetext {
     color: #FFF;
-font-family: Nunito;
-font-size: 1.25rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: capitalize;
+    font-family: Nunito;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
 }
 
 

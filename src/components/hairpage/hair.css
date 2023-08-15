@@ -1,5 +1,5 @@
 .hairparent {
-    background-color: #011E11;
+    background-color: #000;
 }
 
 .leftetxthair {
@@ -54,7 +54,7 @@
 
 }
 
-.splexailhairtag{
+.splexailhairtag {
     color: #FFF !important;
 }
 
@@ -149,7 +149,17 @@ img.hairloss {
 .hairloss {
     width: 100%;
     opacity: 1;
-    animation: fade 5s infinite ease-in;
+    animation: fade 5s infinite ease-in-out;
+}
+
+img.hairgain {
+    position: absolute;
+    width: 100%;
+    animation: visi 5s infinite ease-in-out;
+}
+
+img.hairloss {
+    position: relative;
 }
 
 @keyframes fade {
@@ -157,22 +167,24 @@ img.hairloss {
         opacity: 1;
     }
 
-    25% {
-        opacity: 0.75;
+    100% {
+        opacity: 0;
+        /* Second image fully visible */
     }
+}
 
-    50% {
-        opacity: 0.5;
-    }
-
-    75% {
-        opacity: 0.35;
+@keyframes visi {
+    0% {
+        opacity: 0;
     }
 
     100% {
-        opacity: 0.05;
+        opacity: 1;
+        /* Second image fully visible */
     }
 }
+
+
 
 
 @media screen and (max-width:1024px) {
@@ -215,7 +227,7 @@ img.hairloss {
     }
 
     .innerpara,
-    .hairulspcl .problemli{
+    .hairulspcl .problemli {
         font-size: 1rem;
     }
 
