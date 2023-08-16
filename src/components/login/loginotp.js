@@ -12,9 +12,7 @@ export default function Loginotp() {
   const [showPassword, setShowPassword] = useState(false);
 
   const OTP = useSelector((state) => state.loginotp.otpValue);
-  const MOBILENUMBER = useSelector(
-    (state) => state.loginotp.mobileValue
-  );
+  const MOBILENUMBER = useSelector((state) => state.loginotp.mobileValue);
 
   useEffect(() => {
     // Update the state when the window is resized
@@ -64,7 +62,7 @@ export default function Loginotp() {
     }
   };
 
-  const getreportrequest= async ()=>{
+  const getreportrequest = async () => {
     try {
       if (!MOBILENUMBER || !OTP) {
         console.error("Mobile number or OTP is empty");
@@ -73,14 +71,14 @@ export default function Loginotp() {
 
       const response = await axios.post("http://localhost:8000/api/send-otp/", {
         phone_number: `+91${MOBILENUMBER}`,
-        otp:`${OTP}`
+        otp: `${OTP}`,
       });
 
       // Handle API response if needed
     } catch (error) {
       console.error("API Error:", error);
     }
-  }
+  };
 
   return (
     <>
@@ -194,7 +192,10 @@ export default function Loginotp() {
               </div>
             </div>
 
-            <div class="scan-prnter text-center absolprnt " onClick={getreportrequest}>
+            <div
+              class="scan-prnter text-center absolprnt "
+              onClick={getreportrequest}
+            >
               <p class="strt">Get my Report</p>
             </div>
           </div>
@@ -208,7 +209,7 @@ export default function Loginotp() {
                     src="./Images/landingscanner.png"
                   />
                   <img
-                    src="./Images/line.png"
+                    src="./Images/Line.png"
                     alt="line"
                     className="lineclass lineprnt"
                   />
