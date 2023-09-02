@@ -8,6 +8,7 @@ export const fetchQuestionnaireData = () => async (dispatch) => {
     dispatch({
       type: "FETCH_QUESTIONNAIRE_SUCCESS",
       payload: response.data, // Assuming the API returns an array of questions and options
+
     });
   } catch (error) {
     dispatch({

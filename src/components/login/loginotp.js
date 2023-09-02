@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { updateOtpValue, updateMobileValue } from "../../actions/loginotp";
 import axios from "axios";
+import { updateprogressvalue } from "../../actions/updateprogress";
 
 export default function Loginotp() {
   const dispatch = useDispatch();
@@ -13,6 +14,7 @@ export default function Loginotp() {
 
   const OTP = useSelector((state) => state.loginotp.otpValue);
   const MOBILENUMBER = useSelector((state) => state.loginotp.mobileValue);
+  const progressValue = useSelector((state) => state.progress.progressValue);
 
   useEffect(() => {
     // Update the state when the window is resized

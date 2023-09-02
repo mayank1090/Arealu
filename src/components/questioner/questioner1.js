@@ -1,46 +1,121 @@
-import React from "react";
+import React, { useState } from "react";
 import "./questioner1.css"; // You can define your styles in this CSS file
 import { useSelector, useDispatch } from "react-redux";
-import {
-  updateQuestion1Option,
-} from "../../actions/questionnaireActions";
+// import {
+//   updateQuestion1Option,
+// } from "../../actions/questionnaireActions";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { updateQuestionOption } from "../../actions/questionnaireActions";
+import { updateprogressvalue } from "../../actions/updateprogress";
 
 const Questionnaire1 = () => {
 
+  let questionumber=1
+
   const navigate=useNavigate()
+  const[currentselected,setselected]=useState()
+  const selectedOption = useSelector((state) => state.questionnaire.questions);
+  const progressValue = useSelector((state) => state.progress.progressValue);
+  // const questiondata= useSelector((state)=> state.questiondataapi.questionnaireData)
 
-  const selectedOption = useSelector((state) => state.questionnaire.question1Option);
-  const dispatch = useDispatch();
+  const questiondata=[
+    
+    {
+      text: "Your Major Skin Issues ?",
+      options: [
+        {
+          text: "Redness"
+        },
+        {
+          text: "Darkspots"
+        },
+        {
+          text: "Pimples"
+        },
+        {
+          text: "Aging"
+        },
+        {
+          text: "Acne"
+        }
+      ]
+    },
+    {
+      text: "How Your Skin Feel ?",
+      options: [
+        {
+          text: "Dry"
+        },
+        {
+          text: "Normal"
+        },
+        {
+          text: "Oily"
+        },
+        {
+          text: "Itchy"
+        }
+      ]
+    },
+    {
+      text: "Your Have Dandruff Problems ?",
+      options: [
+        {
+          text: "No"
+        },
+        {
+          text: "Mild"
+        },
+        {
+          text: "Heavy"
+        },
+        {
+          text: "Extreme"
+        }
+      ]
+    },
+    {
+      text: "Do You Facing Hair Fall ?",
+      options: [
+        {
+          text: "No"
+        },
+        {
+          text: "Mild"
+        },
+        {
+          text: "Heavy"
+        },
+        {
+          text: "Extreme"
+        }
+      ]
+    }
+  ]
+  const dispatch = useDispatch();                                 
 
-  const handleOptionClick = (option) => {
-    dispatch(updateQuestion1Option(option));
+  const handleOptionClick = (optionindex) => {
+    setselected(optionindex)
+    dispatch(updateQuestionOption(1, optionindex+1));
+    dispatch(updateprogressvalue(50));
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     // Do something with the selected option, like submitting it to a backend or processing it
-    console.log("Selected option:", selectedOption);
 
-    const dataToSend = {
-      question: "Your major skin issues ?", // Change this as needed
-      selectedOption: selectedOption,
-    };
-
-    try {
-      const response = await axios.post("your-api-endpoint", dataToSend);
-      console.log("API Response:", response.data); // Handle the response if needed
-    } catch (error) {
-      console.error("Error sending data:", error);
-    }
   };
+
+  
 
   return (
     <div className="container">
       <div className="questionnaire-container ">
         <div className="navigator-bar d-flex">
-          <div className="lftarro" onClick={()=>{navigate("/loginquestioner")}}>
+          <div className="lftarro" onClick={()=>{navigate("/loginquestioner")
+          dispatch(updateprogressvalue(30));
+        }}>
             <svg
               className="leftarrowoneicon"
               xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +140,10 @@ const Questionnaire1 = () => {
           <div className="questionnumbercan">
             <p className="questiontxtdesign">questionnaire</p>
           </div>
-          <div className="rgtarro" onClick={()=>{navigate("/questionnaire2")}}>
+          <div className="rgtarro" onClick={()=>{navigate("/questionnaire2")
+           
+        }}
+          >
             <svg
               className="leftarrowoneicon"
               xmlns="http://www.w3.org/2000/svg"
@@ -82,50 +160,22 @@ const Questionnaire1 = () => {
             </svg>
           </div>
         </div>
-        <h1 className="center-heading">Question No. 1</h1>
-        <h2 className="center-subheading">Your major skin issues ?</h2>
+        <h1 className="center-heading">Question No. {questionumber}</h1>
+        <h2 className="center-subheading">{questiondata[0].text}</h2>
         <form onSubmit={handleSubmit} className="options-container">
           <div className="options">
-            <div
+            {questiondata[0].options.map((option,index)=>{
+              return(
+                <div
               className={`option ${
-                selectedOption === "Redness" ? "selected" : ""
+                currentselected===index ? "selected" : ""
               }`}
-              onClick={() => handleOptionClick("Redness")}
+              onClick={() => handleOptionClick(index)}
             >
-              <p className="optionname">Redness</p>
+              <p className="optionname">{option.text}</p>
             </div>
-            <div
-              className={`option ${
-                selectedOption === "Darkspots" ? "selected" : ""
-              }`}
-              onClick={() => handleOptionClick("Darkspots")}
-            >
-              <p className="optionname">Darkspots</p>
-            </div>
-            <div
-              className={`option ${
-                selectedOption === "Pimples" ? "selected" : ""
-              }`}
-              onClick={() => handleOptionClick("Pimples")}
-            >
-              <p className="optionname">Pimples</p>
-            </div>
-            <div
-              className={`option ${
-                selectedOption === "Aging" ? "selected" : ""
-              }`}
-              onClick={() => handleOptionClick("Aging")}
-            >
-              <p className="optionname">Aging</p>
-            </div>
-            <div
-              className={`option ${
-                selectedOption === "Acne" ? "selected" : ""
-              }`}
-              onClick={() => handleOptionClick("Acne")}
-            >
-              <p className="optionname">Acne</p>
-            </div>
+              )
+            })}
           </div>
         </form>
       </div>
@@ -136,12 +186,12 @@ const Questionnaire1 = () => {
               <div
                 class="progress-bar"
                 role="progressbar"
-                style={{ width: "53%" }}
-                aria-valuenow="53"
+                style={{ width: `${progressValue}%` }}
+                aria-valuenow={progressValue}
                 aria-valuemin="0"
                 aria-valuemax="100"
               ></div>
-              <p className="current-percentage">53%</p>
+              <p className="current-percentage">{progressValue}%</p>
             </div>
           </div>
         </div>

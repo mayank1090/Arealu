@@ -3,6 +3,7 @@ import React, { useRef, useEffect,useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { captureImage } from "../../actions/selfiimageaction";
 import { useNavigate } from "react-router-dom";
+import { updateprogressvalue } from "../../actions/updateprogress";
 
 function Selfie2() {
   const navigate =useNavigate()
@@ -10,7 +11,7 @@ function Selfie2() {
   const selfieImages = useSelector((state) => state.selfieImages);
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
-
+  const progressValue = useSelector((state) => state.progress.progressValue);
   const [facingMode, setFacingMode] = useState("user");
 
   const switchCamera = () => {
@@ -55,6 +56,7 @@ function Selfie2() {
     // Convert the canvas to a data URL (image/png)
     const capturedImage = canvas.toDataURL("image/png");
     dispatch(captureImage("closeup", capturedImage)); // Dispatch action to store image in Redux
+    dispatch(updateprogressvalue(20));
   };
 
   return (
@@ -70,7 +72,11 @@ function Selfie2() {
 
         <div className="main-sec">
           <div className="upper-sec d-flex  ">
-            <div className="leftarrowprnt" onClick={()=>{navigate("/selfie1")}}>
+            <div className="leftarrowprnt" onClick={()=>{navigate("/selfie1")
+             dispatch(updateprogressvalue(10));
+          }
+          
+          }>
             <svg className="rightarrow" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
   <circle cx="22.5" cy="22.5" r="22.5" transform="matrix(-1 0 0 1 45 0)" fill="#9279FF"/>
   <path d="M29.0114 36.0457C28.3223 36.7348 27.2114 36.7348 26.5223 36.0457L14.8364 24.3598C14.2879 23.8113 14.2879 22.9254 14.8364 22.377L26.5223 10.691C27.2114 10.002 28.3223 10.002 29.0114 10.691C29.7004 11.3801 29.7004 12.491 29.0114 13.1801L18.8301 23.3754L29.0254 33.5707C29.7004 34.2457 29.7004 35.3707 29.0114 36.0457Z" fill="white"/>
@@ -149,8 +155,8 @@ function Selfie2() {
               <div className="progressbar primary">
                 
               <div class="progress text-center"> 
-        <div class="progress-bar" role="progressbar" style={{width: "53%"}} aria-valuenow="53" aria-valuemin="0" aria-valuemax="100"></div>
-        <p className="current-percentage">53%</p>
+        <div class="progress-bar" role="progressbar" style={{width: `${progressValue}%`}} aria-valuenow={progressValue} aria-valuemin="0" aria-valuemax="100"></div>
+        <p className="current-percentage">{progressValue}%</p>
       </div>
        
               </div>

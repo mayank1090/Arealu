@@ -114,6 +114,46 @@
     width: 100%;
 }
 
+
+
+
+.scannerone {
+    width: 25%;
+    position: absolute;
+    top: 38%;
+    left: 38%;
+}
+
+
+.merge-parent {
+    position: relative;
+}
+
+.lineprnt {
+    top: 0;
+    position: absolute;
+    left: 5% !important;
+    width: 90% !important;
+    /* width: 100%; */
+    animation: InUp 4s ease-in-out infinite;
+}
+
+img.lineclass {
+    width: 100%;
+}
+
+.scan-prnt {
+    cursor: pointer;
+}
+img.landingscaner {
+    width: 100%;
+    position: relative;
+}
+
+img.dotessse{
+    animation: way 5s infinite ease-in-out;
+}
+
 @media screen and (max-width:768px) {
 
     .parent {
@@ -179,36 +219,6 @@
     }
 }
 
-
-.scannerone {
-    width: 25%;
-    position: absolute;
-    top: 38%;
-    left: 38%;
-}
-
-
-.merge-parent {
-    position: relative;
-}
-
-.lineprnt {
-    top: 0;
-    position: absolute;
-    left: 5% !important;
-    width: 90% !important;
-    /* width: 100%; */
-    animation: InUp 4s ease-in-out infinite;
-}
-
-img.lineclass {
-    width: 100%;
-}
-
-.scan-prnt {
-    cursor: pointer;
-}
-
 @keyframes InUp {
     0% {
         top: 5%;
@@ -227,10 +237,6 @@ img.lineclass {
     }
 }
 
-img.landingscaner {
-    width: 100%;
-    position: relative;
-}
 
 @media screen and (max-width:1200px) and (min-width:768px) {
     .headtext{
@@ -256,10 +262,6 @@ img.landingscaner {
     .subdiv {
         opacity: 0;
         width: 31% !important;}
-}
-
-img.dotessse{
-    animation: way 5s infinite ease-in-out;
 }
 
 @keyframes way {

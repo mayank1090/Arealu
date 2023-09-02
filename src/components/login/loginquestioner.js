@@ -3,25 +3,30 @@ import "./loginquestion.css"; // You can define your styles in this CSS file
 import { useSelector, useDispatch } from "react-redux";
 import { updateAge,updateFullname,updateGender } from "../../actions/loginquestions";
 import { useNavigate } from "react-router-dom";
+import { updateprogressvalue } from "../../actions/updateprogress";
 
 const Loginquestioner = () => {
   const navigate = useNavigate()
   const gender = useSelector((state) => state.loginquestioner.gender);
   const age = useSelector((state) => state.loginquestioner.age);
   const fullname =useSelector((state)=>state.loginquestioner.fullname)
+  const progressValue = useSelector((state) => state.progress.progressValue);
 
   const dispatch = useDispatch();
 
   const handlegender = (option) => {
     dispatch(updateGender(option));
+    dispatch(updateprogressvalue(40));
   };
 
   const handlefullname = (option) => {
     dispatch(updateFullname(option));
+    dispatch(updateprogressvalue(35));
   };
 
   const handleage = (option) => {
     dispatch(updateAge(option));
+    dispatch(updateprogressvalue(45));
   };
 
   const fulllogin = useSelector((state) => state.loginquestioner);
@@ -38,7 +43,10 @@ const Loginquestioner = () => {
     <div className="container">
       <div className="questionnaire-container ">
         <div className="navigator-bar d-flex">
-          <div className="lftarro" onClick={()=>{navigate("/selfie3")}} >
+          <div className="lftarro" onClick={()=>{navigate("/selfie3")
+           dispatch(updateprogressvalue(30));
+          }
+        } >
             <svg
               className="leftarrowoneicon"
               xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +94,7 @@ const Loginquestioner = () => {
                 <p className="loginfullname">Full Name</p>
             </div>
             <div className="nameinput">
-                <input className="fullnameinput" onChange={(e)=>{handlefullname(e.target.value)}}/>
+                <input className="fullnameinput" value={fullname} onChange={(e)=>{handlefullname(e.target.value)}}/>
             </div>
 
             <div className="genderdiv">
@@ -150,12 +158,12 @@ const Loginquestioner = () => {
               <div
                 class="progress-bar"
                 role="progressbar"
-                style={{ width: "53%" }}
-                aria-valuenow="53"
+                style={{ width: `${progressValue}%`  }}
+                aria-valuenow={progressValue}
                 aria-valuemin="0"
                 aria-valuemax="100"
               ></div>
-              <p className="current-percentage">53%</p>
+              <p className="current-percentage">{progressValue}%</p>
             </div>
           </div>
         </div>
