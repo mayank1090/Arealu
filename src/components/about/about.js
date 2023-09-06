@@ -148,7 +148,7 @@ export default function About() {
                 </div>
                 <div className="whiteparnt updatediff">
                   <div className="greenupdate">
-                    <p className="updatetext">Subscribe to Us</p>
+                    <p className="updatetext">Subscribe to the Us</p>
                   </div>
                 </div>
               </div>
