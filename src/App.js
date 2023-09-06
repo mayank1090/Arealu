@@ -1,13 +1,13 @@
 import "./App.css";
-import About from "./components/about/about";
+// import About from "./components/about/about";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Founder from "./components/founder/founder";
-import Hair from "./components/hairpage/hair";
-import Landing from "./components/landingPage/landing";
-import Process from "./components/process/process";
+// import Founder from "./components/founder/founder";
+// import Hair from "./components/hairpage/hair";
+// import Landing from "./components/landingPage/landing";
+// import Process from "./components/process/process";
 // import CameraComponent from './components/Sample/sample';
-import Scan from "./components/Scanpage/scan";
-import Skin from "./components/skinpage/skin";
+// import Scan from "./components/Scanpage/scan";
+// import Skin from "./components/skinpage/skin";
 import Mainpage from "./components/mainpage/mainpage";
 
 import { Provider } from "react-redux";

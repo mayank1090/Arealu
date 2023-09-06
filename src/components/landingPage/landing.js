@@ -23,7 +23,7 @@ export default function Landing() {
     <>
       <div class="parent ">
         <div class="logo-parent text-center">
-          <img src="./Images/logo.png" />
+          <img src="./Images/logo.png" alt="line"/>
         </div>
 
         <div class="d-flex gap30 justify-content-between p-2 container-fluid">
@@ -37,11 +37,12 @@ export default function Landing() {
             {isMobileView && (
               <div class="width45 otherone">
                 <div className="merge-parent">
-                  <img className="dotes" src="./Images/onlydotes.png" />
+                  <img className="dotes" src="./Images/onlydotes.png" alt="line"/>
                   <div className="scannerone">
                     <img
                       className="landingscaner"
                       src="./Images/landingscanner.png"
+                      alt="line"
                     />
 
                     <img
@@ -73,11 +74,12 @@ export default function Landing() {
           {!isMobileView && (
             <div class="width45 otherone">
               <div className="merge-parent">
-                <img className="dotes" src="./Images/onlydotes.png" />
+                <img className="dotes" src="./Images/onlydotes.png" alt="line" />
                 <div className="scannerone">
                   <img
                     className="landingscaner"
                     src="./Images/landingscanner.png"
+                    alt="line"
                   />
                   <img
                     src="./Images/Line.png"

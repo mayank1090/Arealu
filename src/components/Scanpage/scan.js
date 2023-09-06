@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import "./scan.css";
 
 export default function Scan() {
