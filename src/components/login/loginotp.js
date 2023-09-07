@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { updateOtpValue, updateMobileValue } from "../../actions/loginotp";
 import axios from "axios";
-import { updateprogressvalue } from "../../actions/updateprogress";
+// import { updateprogressvalue } from "../../actions/updateprogress";
 
 export default function Loginotp() {
   const dispatch = useDispatch();
@@ -14,7 +14,7 @@ export default function Loginotp() {
 
   const OTP = useSelector((state) => state.loginotp.otpValue);
   const MOBILENUMBER = useSelector((state) => state.loginotp.mobileValue);
-  const progressValue = useSelector((state) => state.progress.progressValue);
+  // const progressValue = useSelector((state) => state.progress.progressValue);
 
   useEffect(() => {
     // Update the state when the window is resized
@@ -54,7 +54,7 @@ export default function Loginotp() {
         return;
       }
 
-      const response = await axios.post("http://localhost:8000/api/send-otp/", {
+       await axios.post("http://localhost:8000/api/send-otp/", {
         phone_number: `+91${MOBILENUMBER}`,
       });
 
@@ -71,7 +71,7 @@ export default function Loginotp() {
         return;
       }
 
-      const response = await axios.post("http://localhost:8000/api/send-otp/", {
+      await axios.post("http://localhost:8000/api/send-otp/", {
         phone_number: `+91${MOBILENUMBER}`,
         otp: `${OTP}`,
       });
@@ -86,7 +86,7 @@ export default function Loginotp() {
     <>
       <div class="parent ">
         <div class="logo-parent text-center">
-          <img src="./Images/logo.png" />
+          <img src="./Images/logo.png" alt="..."/>
         </div>
 
         <div class="d-flex gap30 justify-content-between container-fluid">
@@ -94,11 +94,12 @@ export default function Loginotp() {
             {isMobileView && (
               <div class={`width45 otherone `} style={{ display: "none" }}>
                 <div className="merge-parent">
-                  <img className="dotes" src="./Images/onlydotes.png" />
+                  <img className="dotes" src="./Images/onlydotes.png" alt="..."/>
                   <div className="scannerone">
                     <img
                       className="landingscaner"
                       src="./Images/landingscanner.png"
+                      alt="..."
                     />
                   </div>
                 </div>
@@ -204,11 +205,12 @@ export default function Loginotp() {
           {!isMobileView && (
             <div class="width45 otherone">
               <div className="merge-parent">
-                <img className="dotes" src="./Images/onlydotes.png" />
+                <img className="dotes" src="./Images/onlydotes.png" alt="..."/>
                 <div className="scannerone">
                   <img
                     className="landingscaner"
                     src="./Images/landingscanner.png"
+                    alt="..."
                   />
                   <img
                     src="./Images/Line.png"

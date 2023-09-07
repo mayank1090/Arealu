@@ -33,11 +33,11 @@ const Loginquestioner = () => {
 
   useEffect(()=>{console.log(fulllogin)},[fulllogin])
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Do something with the selected option, like submitting it to a backend or processing it
-    console.log("Selected option:", gender,age,fullname);
-  };
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   // Do something with the selected option, like submitting it to a backend or processing it
+  //   console.log("Selected option:", gender,age,fullname);
+  // };
 
   return (
     <div className="container">
