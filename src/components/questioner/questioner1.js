@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 //   updateQuestion1Option,
 // } from "../../actions/questionnaireActions";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
 import { updateQuestionOption } from "../../actions/questionnaireActions";
 import { updateprogressvalue } from "../../actions/updateprogress";
 
