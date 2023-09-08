@@ -3,7 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "jest": {
-    "verbose": true
+    "testMatch": [
+      "<rootDir>/src/**/*.test.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|scss)$": "identity-obj-proxy"
+    },
+    "setupFilesAfterEnv": ["<rootDir>/src/setupTests.js"],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.js",
+      "!**/node_modules/**"
+    ],
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "html"
+    ]
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
